@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;   
+      background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg");
+      background-size: cover; /* Ensures the image covers the entire background */
+      background-repeat: no-repeat; /* Prevents the image from repeating */
+      background-position: center; /* Centers the image */
+    }
+    .main{
+      width:40vw;
+      height: 20vw;
+     /* background: linear-gradient(to right,rgb(38, 38, 151),rgb(190, 65, 190));*/
+     background-color: aliceblue;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color:black;
+      border-radius: 5px;
+    }
+    td{
+      padding:5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <form action="">
+      <table>
+        <tr>
+          <td>
+            <h1>Login Form</h1>
+          </td>
+        </tr>
+        <tr>
+          <td><div class="label">Name</div></td>
+          <td><input type="text"  placeholder="Enter your Name" id="name"></td>
+        </tr>
+        <tr>
+          <td><div class="label">Number</div></td>
+          <td><input type="number" placeholder="Enter your Number" id="number"></td>
+        </tr>
+        <tr>
+          <td><div class="label">Email</div></td>
+          <td><input type="email"  placeholder="Enter your Email" id="email"></td>
+        </tr>
+        <tr>
+          <td><div class="label">Contact</div></td>
+          <td><input type="number"  placeholder="Enter your Contact" id="contact"></td>
+        </tr>
+        <tr>
+          <td><button>Submit</button></td>
+        </tr>
+      </table>
+    </form>
+    <p id="demo"></p> <!-- This ID should be the one used in the script -->
+  </div>
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        { pageLanguage: 'en' }, // Set the page language
+        'demo' // Set the container ID
+      );
+    }
+  </script>
+</body>
+</html>
